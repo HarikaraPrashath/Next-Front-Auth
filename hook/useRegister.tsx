@@ -25,7 +25,7 @@ export const useRegister = () => {
 console.log("Backend URL:", process.env.NEXT_PUBLIC_BACKEND_URL);
 
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}api/users/register`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/users/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
