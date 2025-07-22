@@ -1,4 +1,4 @@
-import {useAuthContext}  from "../hook/useAuthContext"
+import {useAuthContext}  from "./useAuthContext"
 
 
 export const useLogout = ()=>{
