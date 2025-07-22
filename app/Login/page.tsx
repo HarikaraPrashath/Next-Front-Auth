@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 
-const Login = () => {
+const Page = () => {
   const { login, isLoading } = useLogin();
   const [name, setName] = useState<string>("");
   const [password, setPassword] = useState<string>("");
@@ -128,4 +128,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Page;

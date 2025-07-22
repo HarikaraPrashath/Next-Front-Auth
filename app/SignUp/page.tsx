@@ -4,7 +4,7 @@ import { useRegister } from "../hook/useRegister";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-const SignUp = () => {
+const Page = () => {
   const { register, isLoading, error } = useRegister();
   const [name, setName] = useState<string>("");
   const [password, setPassword] = useState<string>("");
@@ -146,4 +146,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Page;

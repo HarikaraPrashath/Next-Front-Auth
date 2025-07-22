@@ -24,7 +24,7 @@ export const useRegister = () => {
     }
 
     try {
-      const response = await fetch(`${process.env.BACKEND_URL}/api/users/register`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/users/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -50,9 +50,10 @@ export const useRegister = () => {
       dispatch({ type: "LOGIN", payload: json }); 
       setIsLoading(false);
       return true
-    } catch {
+    } catch(error) {
       setError("Something went wrong");
       setIsLoading(false);
+      console.error("Registration error:", error);
     }
   };
   return { register, isLoading, error };
