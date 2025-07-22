@@ -51,7 +51,7 @@ const Page = () => {
         {/* Right Column */}
         <div
           className="w-full h-full bg-cover bg-center "
-          style={{ backgroundImage: "url('/images/hero.png')" }}
+          style={{ backgroundImage: "url('/Images/hero.png')" }}
         >
           {/* Login Form */}
           <div className=" flex flex-col items-center justify-center h-full ml-50 text-white px-6">
