@@ -29,7 +29,7 @@ const SignUp = () => {
   return (
     <div
       className="min-h-screen "
-      style={{ backgroundImage: "url('/images/bg.png')" }}
+      style={{ backgroundImage: "url('/Images/bg.png')" }}
     >
       <div className="grid grid-cols-[30%_70%] min-h-screen b">
         {/* Left Column */}
@@ -37,7 +37,7 @@ const SignUp = () => {
           {/* Logo */}
           <div className="flex items-center justify-center pt-10">
             <Image
-              src="/images/logo.png"
+              src="/Images/logo.png"
               alt="Logo"
               width={150}
               height={50}
