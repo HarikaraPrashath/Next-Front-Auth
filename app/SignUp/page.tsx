@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { useRegister } from "../../hook/useRegister";
+import { useRegister } from "../hook/useRegister";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 

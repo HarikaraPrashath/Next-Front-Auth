@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { useLogout } from "../../hook/useLogout";
+import { useLogout } from "../hook/useLogout";
 
 const RedirectHandler = () => {
   const router = useRouter();

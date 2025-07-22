@@ -13,7 +13,7 @@ export const useLogin = () => {
     setError(null);
 
     try {
-      const response = await fetch(`${process.env.BACKEND_URL}/api/users/login`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/users/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
