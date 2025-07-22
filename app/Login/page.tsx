@@ -6,7 +6,7 @@ import Image from "next/image";
 
 
 const Login = () => {
-  const { login, error, isLoading } = useLogin();
+  const { login, isLoading } = useLogin();
   const [name, setName] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const router = useRouter();

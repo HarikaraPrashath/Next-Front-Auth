@@ -29,8 +29,7 @@ const RedirectHandler = () => {
         } else {
           router.push("/Login");
         }
-      } catch (error) {
-        console.error("Invalid user format in localStorage");
+      } catch {
         router.push("/Login");
       }
     } else {
@@ -54,7 +53,7 @@ const RedirectHandler = () => {
     </div>
 
     <p className="text-sm text-gray-400 italic mb-8">
-      You're logged in. Enjoy your session!
+      You are logged in. Enjoy your session!
     </p>
 
     <button

@@ -50,7 +50,7 @@ export const useRegister = () => {
       dispatch({ type: "LOGIN", payload: json }); 
       setIsLoading(false);
       return true
-    } catch (error) {
+    } catch {
       setError("Something went wrong");
       setIsLoading(false);
     }

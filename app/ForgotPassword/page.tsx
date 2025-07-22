@@ -1,8 +1,9 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
-const page = () => {
+const Page = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -32,7 +33,7 @@ const page = () => {
       } else {
         setMessage(data.message);
       }
-    } catch (error) {
+    } catch {
       setError("Server error");
     }
     setIsLoading(false);
@@ -136,9 +137,9 @@ const page = () => {
               {/* Already have account */}
               <p className="text-center text-white text-sm mt-6">
                 Back to Login{" "}
-                <a href="/" className="text-green-600 hover:underline">
+                <Link href="/" className="text-green-600 hover:underline">
                   Login
-                </a>
+                </Link>
               </p>
             </form>
           </div>
@@ -148,4 +149,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

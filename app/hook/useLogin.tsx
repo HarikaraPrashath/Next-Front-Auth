@@ -39,7 +39,7 @@ export const useLogin = () => {
       setIsLoading(false);
      
       return { success: true };
-    } catch (error) {
+    } catch {
       setError("Something went wrong.");
       setIsLoading(false);
       return { success: false };

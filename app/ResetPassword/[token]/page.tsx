@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter, useParams } from "next/navigation";
 import Image from "next/image";
 
-const page = () => {
+const Page = () => {
   const router = useRouter();
   const params = useParams();
   const token = params?.token as string;
@@ -49,7 +49,7 @@ const page = () => {
           router.push("/Login");
         }, 2000);
       }
-    } catch (error) {
+    } catch  {
       setError("Server error");
     }
 
@@ -172,4 +172,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
