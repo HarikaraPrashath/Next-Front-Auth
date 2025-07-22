@@ -42,38 +42,31 @@ const RedirectHandler = () => {
   if (!user) return null;
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-800">
-      <div className="bg-white  rounded-lg p-4 w-[90%] max-w-md text-center">
-        <h1 className="text-2xl font-semibold text-blue-600 mb-4">Home Page</h1>
+  <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-900 via-indigo-800 to-purple-900 px-4">
+  <div className="bg-white rounded-xl p-8 w-full max-w-md shadow-lg text-center">
+    <h1 className="text-3xl font-bold text-blue-700 mb-6">Welcome Back!</h1>
 
-        <div className="mb-4">
-          <p className="text-gray-700 font-medium mb-1">Email</p>
-          <p className="text-sm text-gray-500 bg-gray-100 p-2 rounded-md break-all">
-            {user.email}
-          </p>
-        </div>
-
-        <div>
-          <p className="text-gray-700 font-medium mb-1">Token</p>
-          <p className="text-xs text-gray-500 bg-gray-100 p-2 rounded-md break-all">
-            {user.token}
-          </p>
-        </div>
-
-        <div className="mt-6">
-          <span className="text-sm text-gray-400">
-            You can see the token and email here...
-          </span>
-        </div>
-        <button
-          type="submit"
-          onClick={handleClick}
-          className="px-6 py-2 bg-blue-500 mt-5 text-white font-medium rounded-lg shadow-md hover:bg-blue-600 transition-all"
-        >
-          Logout
-        </button>
-      </div>
+    <div className="mb-6">
+      <p className="text-gray-700 font-semibold mb-2">Email</p>
+      <p className="text-gray-600 bg-gray-100 p-3 rounded-lg truncate" title={user.email}>
+        {user.email}
+      </p>
     </div>
+
+    <p className="text-sm text-gray-400 italic mb-8">
+      You're logged in. Enjoy your session!
+    </p>
+
+    <button
+      type="button"
+      onClick={handleClick}
+      className="w-full px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors"
+    >
+      Logout
+    </button>
+  </div>
+</div>
+
   );
 };
 
