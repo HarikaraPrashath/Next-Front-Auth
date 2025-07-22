@@ -32,7 +32,7 @@ const page = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/users/reset-password/${token}`,
+        `${process.env.BACKEND_URL}/api/users/reset-password/${token}`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

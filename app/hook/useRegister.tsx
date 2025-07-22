@@ -24,7 +24,7 @@ export const useRegister = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/users/register", {
+      const response = await fetch(`${process.env.BACKEND_URL}/api/users/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
